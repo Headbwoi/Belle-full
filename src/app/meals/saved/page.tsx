@@ -1,6 +1,7 @@
 "use client"
-import { deleteSavedMeal, getSavedMeals } from "@/app/redux/features/mealSlice"
-import { useAppDispatch, useAppSelector } from "@/app/redux/hooks"
+
+import { useAppDispatch, useAppSelector } from "@/redux/hooks"
+import { deleteSavedMeal, getSavedMeals } from "@/redux/slices/mealSlice"
 import { Loader } from "@mantine/core"
 import Image from "next/image"
 import Link from "next/link"

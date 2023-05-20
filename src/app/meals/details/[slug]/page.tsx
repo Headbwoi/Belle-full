@@ -1,6 +1,6 @@
 "use client"
-import { getMealDetails, saveMeal } from "@/app/redux/features/mealSlice"
-import { useAppDispatch, useAppSelector } from "@/app/redux/hooks"
+import { getMealDetails, saveMeal } from "@/redux/slices/mealSlice"
+import { useAppDispatch, useAppSelector } from "@/redux/hooks"
 import { Loader } from "@mantine/core"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
@@ -25,9 +25,7 @@ export default function MealsDetails({ params }: { params: { slug: number } }) {
 
   useEffect(() => {
     dispatch(getMealDetails(params.slug))
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [params.slug])
+  }, [params.slug, dispatch])
 
   useEffect(() => {
     if (mealData && mealData !== undefined) {
