@@ -17,10 +17,12 @@ const PhotoGallery = dynamic(() => import("@/components/LandingPage/Gallery"))
 const Contact = dynamic(() => import("@/components/LandingPage/Contact"))
 import Space from "@/components/common/Space"
 import Footer from "@/components/LandingPage/Footer"
+import Header from "@/components/Header/Header"
 
 export default function Home() {
   return (
-    <>
+    <div className="overflow-x-hidden">
+      <Header />
       <HeroSection />
       <AboutSection />
       <MealMenuSection />
@@ -31,6 +33,6 @@ export default function Home() {
       <Contact />
       <Space />
       <Footer />
-    </>
+    </div>
   )
 }

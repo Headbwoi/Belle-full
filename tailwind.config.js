@@ -24,6 +24,7 @@ module.exports = {
         divider: "hsl(0,0%,98%)",
         selected: "hsl(222,32%,14%)",
         category: "hsl(216,19%,28%)",
+        signup_bg: "hsl(265,80%,60%)",
       },
     },
   },

@@ -1,7 +1,6 @@
 import ReduxProvider from "@/components/Providers/ReduxProvider"
 import "./globals.css"
 import { Cormorant_Upright, Open_Sans } from "next/font/google"
-import Header from "@/components/Header/Header"
 
 const com = Cormorant_Upright({
   variable: "--font-com",
@@ -29,10 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${com.variable} ${sans.variable}`}>
-        <ReduxProvider>
-          <Header />
-          {children}
-        </ReduxProvider>
+        <ReduxProvider>{children}</ReduxProvider>
       </body>
     </html>
   )

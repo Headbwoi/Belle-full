@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 function ChefsWord() {
   return (
     <section
-      className={`flex items-center flex-col lg:flex-row  bg-[url(/images/about-image.jpg)] px-5 py-32 md:px-10 lg:px-14 relative min-h-[65.5rem]`}
+      className={`flex items-center flex-col lg:flex-row  bg-[url(/images/about-image.jpg)] px-5 py-32 md:px-10 lg:px-14 relative min-h-[65.5rem] overflow-x-hidden`}
     >
       <div className="flex items-center gap-20 justify-center flex-col lg:flex-row container">
         <ChefImage />
